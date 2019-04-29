@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5C2313EB-CAE9-4018-B16E-1FA6A7C1A3E5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>uStore</RootNamespace>
+    <AssemblyName>uStore</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\cart.js" />
+    <Content Include="js\main.js" />
+    <Content Include="packages.config" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\slick.eot" />
+    <Content Include="fonts\slick.ttf" />
+    <Content Include="fonts\slick.woff" />
+    <Content Include="Archive\fonts\fontawesome-webfont.eot" />
+    <Content Include="Archive\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Archive\fonts\fontawesome-webfont.woff" />
+    <Content Include="Archive\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Archive\fonts\FontAwesome.otf" />
+    <Content Include="Archive\fonts\slick.eot" />
+    <Content Include="Archive\fonts\slick.ttf" />
+    <Content Include="Archive\fonts\slick.woff" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Archive\blank.html" />
+    <Content Include="Archive\checkout.html" />
+    <Content Include="Archive\Credits.txt" />
+    <Content Include="Archive\css\bootstrap.min.css" />
+    <Content Include="Archive\css\font-awesome.min.css" />
+    <Content Include="Archive\css\nouislider.min.css" />
+    <Content Include="Archive\css\slick-theme.css" />
+    <Content Include="Archive\css\slick.css" />
+    <Content Include="Archive\css\style.css" />
+    <Content Include="Archive\fonts\fontawesome-webfont.svg" />
+    <Content Include="Archive\fonts\slick.svg" />
+    <Content Include="Archive\img\hotdeal.png" />
+    <Content Include="Archive\img\logo.png" />
+    <Content Include="Archive\img\product01.png" />
+    <Content Include="Archive\img\product02.png" />
+    <Content Include="Archive\img\product03.png" />
+    <Content Include="Archive\img\product04.png" />
+    <Content Include="Archive\img\product05.png" />
+    <Content Include="Archive\img\product06.png" />
+    <Content Include="Archive\img\product07.png" />
+    <Content Include="Archive\img\product08.png" />
+    <Content Include="Archive\img\product09.png" />
+    <Content Include="Archive\img\shop01.png" />
+    <Content Include="Archive\img\shop02.png" />
+    <Content Include="Archive\img\shop03.png" />
+    <Content Include="Archive\index.html" />
+    <Content Include="Archive\js\bootstrap.min.js" />
+    <Content Include="Archive\js\jquery.min.js" />
+    <Content Include="Archive\js\jquery.zoom.min.js" />
+    <Content Include="Archive\js\main.js" />
+    <Content Include="Archive\js\nouislider.min.js" />
+    <Content Include="Archive\js\slick.min.js" />
+    <Content Include="Archive\product.html" />
+    <Content Include="Archive\screenshot\Checkout.png" />
+    <Content Include="Archive\screenshot\Index.png" />
+    <Content Include="Archive\screenshot\Product.png" />
+    <Content Include="Archive\screenshot\Regular.png" />
+    <Content Include="Archive\screenshot\Store.png" />
+    <Content Include="Archive\store.html" />
+    <Content Include="contact.html" />
+    <Content Include="cameras.html" />
+    <Content Include="accessories.html" />
+    <Content Include="_Laptop2.html" />
+    <Content Include="_Laptop1.html" />
+    <Content Include="tablets.html" />
+    <Content Include="smartphones.html" />
+    <Content Include="Temp Base\blank.html" />
+    <Content Include="Temp Base\checkout.html" />
+    <Content Include="Credits.txt" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\nouislider.min.css" />
+    <Content Include="css\slick-theme.css" />
+    <Content Include="css\slick.css" />
+    <Content Include="css\style.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\slick.svg" />
+    <Content Include="img\hotdeal.png" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\product01.png" />
+    <Content Include="img\product02.png" />
+    <Content Include="img\product03.png" />
+    <Content Include="img\product04.png" />
+    <Content Include="img\product05.png" />
+    <Content Include="img\product06.png" />
+    <Content Include="img\product07.png" />
+    <Content Include="img\product08.png" />
+    <Content Include="img\product09.png" />
+    <Content Include="img\shop01.png" />
+    <Content Include="img\shop02.png" />
+    <Content Include="img\shop03.png" />
+    <Content Include="index.html" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jquery.zoom.min.js" />
+    <Content Include="js\nouislider.min.js" />
+    <Content Include="js\slick.min.js" />
+    <Content Include="Temp Base\product.html" />
+    <Content Include="screenshot\Checkout.png" />
+    <Content Include="screenshot\Index.png" />
+    <Content Include="screenshot\Product.png" />
+    <Content Include="screenshot\Regular.png" />
+    <Content Include="screenshot\Store.png" />
+    <Content Include="laptops.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56334</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:56334/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
